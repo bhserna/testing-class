@@ -2,7 +2,7 @@
 
 Para cada uno de estos ejercicios implementa la función usando TDD.
 
-### 1. Hacer una función mostrar las 5 películas más populares
+### 1. Mostrar las 5 películas más populares
 
 Dada la siguiente estructura de datos:
 
@@ -14,7 +14,7 @@ movies = [
 ]
 ```
 
-### 2. Hacer una función mostrar las 5 películas más populares en un país
+### 2. Mostrar las 5 películas más populares en un país
 
 Dada la siguiente estructura de datos:
 
