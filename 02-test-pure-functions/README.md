@@ -52,9 +52,9 @@ movies = [
 ]
 ```
 
-### 5. Mostrar las categoría disponibles.
+### 5. Mostrar las categoría con el número de películas disponibles.
 
-Regresa una lista con las categorías, de las que se tienen películas.
+Dados los siguientes datos...
 
 ```js
 movies = [
@@ -62,4 +62,12 @@ movies = [
   { id: 3453, name: "Avengers", categories: ["action", "comedy"] },
   { id: 9835, name: "Pinocho", categories: ["kids"] }
 ]
+```
+
+Poder mostrar:
+
+```
+kids (2)
+action (1)
+comedy (1)
 ```

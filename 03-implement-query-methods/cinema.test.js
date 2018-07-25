@@ -1,4 +1,4 @@
-const Cinema = require('./cinema');
+//const Cinema = require('./cinema');
 
 //test("find the most popular movie", () => {
   //const movies = [{ name: "Coco", views: 1234 }, { name: "Avengers", views: 94 }]
