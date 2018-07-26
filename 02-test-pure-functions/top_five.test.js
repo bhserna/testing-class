@@ -33,7 +33,7 @@ describe("Get top five", () => {
     const top = getTopFive(movies);
 
     expect(getNames(top)).toEqual([
-      "Movie1", "Movie2", "Movie3", "Movie4", "Movie5"
+      "Movie6", "Movie5", "Movie4", "Movie3", "Movie2"
     ]);
   });
 
@@ -50,7 +50,7 @@ describe("Get top five", () => {
     const top = getTopFive(movies);
 
     expect(getNames(top)).toEqual([
-      "Movie1", "Movie2", "Movie3", "Movie4", "Movie5"
+      "Movie6", "Movie5", "Movie4", "Movie3", "Movie2"
     ]);
   });
 });
