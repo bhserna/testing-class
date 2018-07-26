@@ -1,4 +1,4 @@
-# Movies
+# Test pure functions
 
 Para cada uno de estos ejercicios implementa la función usando TDD.
 
@@ -12,9 +12,25 @@ movies = [
   { name: "Avengers", totalViews: 25 },
   { name: "Pinocho", totalViews: 123 }
 ]
+
+const top = getTopFive(movies);
 ```
 
-### 2. Mostrar las 5 películas más populares en un país
+### 2. Mostrar las 5 películas más populares (suponiendo que vienen de otro objeto)
+
+Dada la siguiente estructura de datos:
+
+```js
+store = new Store([
+  { name: "Coco", totalViews: 145 },
+  { name: "Avengers", totalViews: 25 },
+  { name: "Pinocho", totalViews: 123 }
+])
+
+const top = getTopFive(store);
+```
+
+### 3. Mostrar las 5 películas más populares en un país
 
 Dada la siguiente estructura de datos:
 
@@ -24,50 +40,23 @@ movies = [
   { name: "Avengers", views: [{country: "Belice"}]},
   { name: "Pinocho", views: [{country: "Chile"}]}
 ]
+
+const top = getTopFiveForCountry("Chile", movies);
 ```
 
-### 3. Mostrar las películas que un usuario tiene sin terminar.
+### Extra: Mostrar las 5 películas más populares en un país con el número de views
 
-Dada las siguientes estructura de datos:
+Dada la siguiente estructura de datos:
 
 ```js
 movies = [
-  { id: 1234, name: "Coco" },
-  { id: 3453, name: "Avengers" },
-  { id: 9835, name: "Pinocho" }
+  { name: "Coco", views: [{country: "México"}, {country: "Canada"}]},
+  { name: "Avengers", views: [{country: "Belice"}]},
+  { name: "Pinocho", views: [{country: "Chile"}]}
 ]
 
-user = { id: 12344, moviesNotFinished: [1234, 9835] }
-```
+const top = getTopFiveForCountry("Chile", movies);
 
-### 4. Mostrar las categoría disponibles.
-
-Regresa una lista con las categorías, de las que se tienen películas.
-
-```js
-movies = [
-  { id: 1234, name: "Coco", categories: ["kids"] },
-  { id: 3453, name: "Avengers", categories: ["action", "comedy"] },
-  { id: 9835, name: "Pinocho", categories: ["kids"] }
-]
-```
-
-### 5. Mostrar las categoría con el número de películas disponibles.
-
-Dados los siguientes datos...
-
-```js
-movies = [
-  { id: 1234, name: "Coco", categories: ["kids"] },
-  { id: 3453, name: "Avengers", categories: ["action", "comedy"] },
-  { id: 9835, name: "Pinocho", categories: ["kids"] }
-]
-```
-
-Poder mostrar:
-
-```
-kids (2)
-action (1)
-comedy (1)
+# Ej
+# Pinocho (1)
 ```
