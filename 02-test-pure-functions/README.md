@@ -36,7 +36,7 @@ Dada la siguiente estructura de datos:
 
 ```js
 movies = [
-  { name: "Coco", views: [{country: "México"}, {country: "México}, {country: "Canada"}]},
+  { name: "Coco", views: [{country: "México"}, {country: "México"}, {country: "Canada"}]},
   { name: "Avengers", views: [{country: "Belice"}]},
   { name: "Pinocho", views: [{country: "Chile"}]}
 ]
