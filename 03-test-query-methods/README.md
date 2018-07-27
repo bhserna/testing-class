@@ -34,7 +34,8 @@ cinema.getMovies()
 
 ### 3. Mostrar las categoría disponibles.
 
-Regresa una lista con las categorías, de las que se tienen películas.
+Regresa una lista con las categorías, de las que se tienen películas
+ordenadas alfabéticamente.
 
 ```js
 movies = [
