@@ -27,7 +27,7 @@ store = new Store([
   { name: "Pinocho", totalViews: 123 }
 ])
 
-const top = getTopFive(store);
+const top = getTopFiveFromStore(store);
 ```
 
 ### 3. Mostrar las 5 películas más populares en un país

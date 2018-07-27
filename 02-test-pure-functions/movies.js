@@ -10,6 +10,15 @@ module.exports = {
       .value();
   },
 
+  getTopFiveFromStore(store) {
+    return _
+      .chain(store.all())
+      .sortBy("totalViews")
+      .reverse()
+      .slice(0, 5)
+      .value();
+  },
+
   getTopFiveForCountry(country, movies) {
     const isForCountry = (view) => view.country === country;
 
