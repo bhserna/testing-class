@@ -4,11 +4,13 @@ Para cada uno de estos ejercicios implementa la función usando TDD.
 
 ### 1. Mostrar las películas que hay en existencia.
 
+Con los siguientes atributos disponibles: `id`, `name`, `averageScore`
+
 ```js
 movies = [
-  { id: 1234, name: "Coco" },
-  { id: 3453, name: "Avengers" },
-  { id: 9835, name: "Pinocho" }
+  { id: 1234, name: "Coco", scores: [4, 5, 3] },
+  { id: 3453, name: "Avengers", scores: [3, 2.5, 4, 5] },
+  { id: 9835, name: "Pinocho", scores: [2, 1, 4] }
 ]
 
 const cinema = new Cinema(movies);
@@ -17,13 +19,13 @@ cinema.getMovies()
 
 ### 2. Mostrar las películas que hay en existencia (pidiéndolas a otro objeto).
 
-Suponiendo que los datos se obtienen de forma síncrona.
+Con los siguientes atributos disponibles: `id`, `name`, `averageScore`
 
 ```js
 store = new Store([
-  { id: 1234, name: "Coco" },
-  { id: 3453, name: "Avengers" },
-  { id: 9835, name: "Pinocho" }
+  { id: 1234, name: "Coco", scores: [4, 5, 3] },
+  { id: 3453, name: "Avengers", scores: [3, 2.5, 4, 5] },
+  { id: 9835, name: "Pinocho", scores: [2, 1, 4] }
 ])
 
 const cinema = new Cinema(store);
