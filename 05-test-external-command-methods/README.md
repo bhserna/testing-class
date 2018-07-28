@@ -6,7 +6,7 @@ Para cada uno de estos ejercicios implementa la función usando TDD.
 
 - Una película se crea con un nombre
 - Regresa un error si la película no tiene nombre
-- Agrega un ID unico a la película
+- Agrega un ID unico a la película (?)
 
 ```js
 store = new Store
